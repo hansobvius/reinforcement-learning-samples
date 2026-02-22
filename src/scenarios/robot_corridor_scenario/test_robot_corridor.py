@@ -3,8 +3,8 @@ import os
 import time
 
 # --- PATH CONFIGURATION ---
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-MODELS_DIR = os.path.join(BASE_DIR, 'models')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+MODELS_DIR = os.path.join(BASE_DIR, 'models', 'robot_corridor_model')
 MODEL_PATH = os.path.join(MODELS_DIR, 'q_table_corridor.npy')
 
 def test_model():

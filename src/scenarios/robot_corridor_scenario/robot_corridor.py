@@ -4,9 +4,9 @@ import os
 
 # --- PATH CONFIGURATION ---
 # Define paths for data and models
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DATA_DIR = os.path.join(BASE_DIR, 'data')
-MODELS_DIR = os.path.join(BASE_DIR, 'models')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+DATA_DIR = os.path.join(BASE_DIR, 'data', 'robot_corridor_data')
+MODELS_DIR = os.path.join(BASE_DIR, 'models', 'robot_corridor_model')
 
 # Ensure directories exist
 os.makedirs(DATA_DIR, exist_ok=True)
